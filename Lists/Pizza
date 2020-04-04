@@ -1,0 +1,28 @@
+# Create list for toppings:
+toppings = ["pepperoni", "pineapple", "cheese", "sausage", "olives", "anchovies", "mushrooms"]
+
+# Create list for prices: 
+prices = [2, 6, 1, 3, 2, 7, 2]
+
+# Find lenght of toppings list:
+num_pizzas = len(toppings)
+
+# Print slogan:
+print("We sell " + str(num_pizzas) + " different kinds of pizza!")
+
+# Combine toppings and prices list:
+pizzas = list(zip(prices, toppings))
+print(pizzas)
+
+# Sort pizzas by price (low to high):
+pizzas.sort()
+cheapest_pizza = pizzas[0]
+priciest_pizza = pizzas[-1]
+
+# Create a variable the 3 cheapest pizzas:
+three_cheapest = pizzas[:3]
+print(three_cheapest)
+
+# How many $2 slices are there?
+num_two_dollar_slices = prices.count(2)
+print(num_two_dollar_slices)
